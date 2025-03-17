@@ -1,0 +1,1 @@
+This repo contains on going model for BiLSTM with Attention using Trec dataset for classification
