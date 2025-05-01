@@ -37,7 +37,8 @@ class LSTM(nn.Module):
     def __init__(self, 
                  input_size: int, 
                  hidden_size: int, 
-                 num_layers: int = 1, 
+                 num_layers: int = 1,
+                 dropout=0.0, 
                  bidirectional: bool = False, 
                  device: Optional[torch.device] = None):
         """
@@ -57,6 +58,7 @@ class LSTM(nn.Module):
         self.num_directions = 2 if bidirectional else 1
         self.num_layers = num_layers
         self.device = device
+        self.dropout = dropout
         self.layers_backward = None
 
         # Create forward LSTM layers with appropriate input sizes
@@ -65,6 +67,8 @@ class LSTM(nn.Module):
              else LSTMCell(hidden_size, hidden_size) 
              for i in range(num_layers)]
         )
+
+        self.dropout_forward = nn.ModuleList([nn.Dropout(self.dropout) for _ in range(num_layers - 1)])
         
         # Create backward LSTM layers if bidirectional
         if bidirectional:
@@ -73,6 +77,8 @@ class LSTM(nn.Module):
                  else LSTMCell(hidden_size, hidden_size) 
                  for i in range(num_layers)]
             )
+        
+        self.dropout_backward = nn.ModuleList([nn.Dropout(self.dropout) for _ in range(num_layers - 1)])
     
     def forward(self, 
                 x: torch.Tensor, 
@@ -157,6 +163,12 @@ class LSTM(nn.Module):
             
             if self.bidirectional:
                 input_backward = layer_outputs_backward.clone()
+
+            # Apply dropout
+            if layer < len(self.layers_forward) - 1:
+                input_forward = self.dropout_forward[layer](input_forward)
+                if self.bidirectional:
+                    input_backward = self.dropout_backward[layer](input_backward)
                 
             # Store final hidden states for this layer
             h_n[layer] = ht_forward
