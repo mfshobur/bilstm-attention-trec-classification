@@ -1,0 +1,78 @@
+Jum'at, 21-03-2025
+
+1. 
+bagaimana cara menghandle token 's dan 't pada data? misalnya pada kalimat:
+    What was the name of Robert Fulton 's most famous steamboat ?
+dan pada kalimat:
+    What 's the name of the Wilkes plantation in Gone with the Wind ?
+apakah dibiarkan saja atau dihapus
+= gunakan stopwords
+
+
+2. di bagian mana dropout pada LSTM sebaiknya ditambahkan
+= setelah LSTM
+
+
+3. apakah penggunaan stopwords aman dilakukan pada data (terkhusus data klasifikasi pertanyaan) ('t, 's, not)
+= bisa
+
+4. gunakan stopword exclude (who, where)
+
+5. cari tahu kata ganti he/she di entity 
+= terdapat 8 kata he/she di entity
+
+
+sudah dikerjakan:
+1. explore data (cleaning belum rampung)
+2. buat embedding
+2. bangun LSTM cell from scratch
+3. bangun modul LSTM from scratch
+
+
+future works:
+1. bangun modul attention from scratch (DONE)
+2. bangun model LSTM + attention (multihead attention) (DONE)
+3. training model (variasi jumlah layer attention) 
+4. pada setiap variasi model, perhatikan bagaimana setiap layer attention menghubungkan kata
+
+distribusi data/kata setelah preprocess
+
+note:
+optimizer yang digunakan adalah Adam (coba ditelusuri)
+loss function yang digunakan adalah Cross Entropy
+pada kategori pertanyaan entity, tidak terdapat pertanyaan yang bersinggungan dengan kategori human
+embedding yang digunakan adalah word2vec
+embedding dimension adalah 300
+
+note:
+optimizer yang digunakan adalah Adam (coba ditelusuri)
+DONE sub bab stopwords intervention setelah preprocess (tdk smua stopword diterima)
+jelaskan deskripsi masing" kategori
+
+COARSE_LABEL = 
+[
+    0 = "ABBR",
+    1 = "ENTY",
+    2 = "DESC",
+    3 = "HUM",
+    4 = "LOC",
+    5 = "NUM"
+]
+
+
+
+
+
+29 APR 2025
+todo:
+- sertakan sitasi gpt2
+- tampilkan tabel confusion matrix dengan data quantity
+- lanjut uji coba jumlah attention heads
+- mulai menulis mengenai data, data intervention, not using stopwords, model, model inspiration (gpt-2)
+
+revise:
+-
+
+30 April 2025
+task:
+- train current model with variety of dropout value
