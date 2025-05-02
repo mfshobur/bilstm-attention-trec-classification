@@ -5,7 +5,13 @@ import re
 import numpy as np
 
 class TextPreprocessor:
-    def __init__(self, stopwords: set, max_vocab_size=10000, max_seq_length=100, embedding_dim=300):
+    def __init__(
+            self,
+            max_vocab_size=10000,
+            max_seq_length=100,
+            embedding_dim=300,
+            stopwords: set = None,
+            ):
         self.max_vocab_size = max_vocab_size
         self.max_seq_length = max_seq_length
         self.embedding_dim = embedding_dim
@@ -14,7 +20,8 @@ class TextPreprocessor:
         self.word_counts = Counter()
         self.vocab_size = 2  # Starting with PAD and UNK tokens
         self.stopwords = stopwords
-        self.stopwords_intervention()
+        if self.stopwords:
+            self.stopwords_intervention()
         self.embedding_matrix = None
     
     def get_vocab_from_texts(self, texts, use_stopwords=True):
@@ -131,7 +138,7 @@ class TextPreprocessor:
         text = re.sub(r"\s+", " ", text).strip()
 
         # use stopword
-        if use_stopwords:
+        if use_stopwords and self.stopwords:
             new_tokens = []
             tokens = text.split()
 
