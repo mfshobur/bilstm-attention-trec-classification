@@ -38,16 +38,16 @@ class FeedForward(nn.Module):
     def __init__(self, emb_dim):
         super().__init__()
         self.layers = nn.Sequential(
-            nn.Linear(emb_dim, emb_dim*2),
-            nn.ReLU(),
-            nn.Linear(emb_dim*2, emb_dim)
+            nn.Linear(emb_dim, emb_dim*4),
+            nn.GELU(),
+            nn.Linear(emb_dim*4, emb_dim)
         )
     
     def forward(self, x):
         return self.layers(x)
 
 class MultiHeadAttention(nn.Module):
-    def __init__(self, d_in, d_out, context_length, num_heads=1, dropout=0.0, qkv_bias=False):
+    def __init__(self, d_in, d_out, context_length, num_heads=1, dropout=0.0, qkv_bias=False, use_causal_mask=False):
         super().__init__()
         assert (d_out % num_heads == 0), "d_out must be divisible by num_heads"
 
@@ -59,10 +59,13 @@ class MultiHeadAttention(nn.Module):
         self.W_value = nn.Linear(d_in, d_out, bias=qkv_bias)
         self.out_proj = nn.Linear(d_out, d_out)
         self.dropout = nn.Dropout(dropout)
-        self.register_buffer(
-            'mask',
-            torch.triu(torch.ones(context_length, context_length), diagonal=1)
-        )
+        self.use_causal_mask = use_causal_mask
+
+        if use_causal_mask:
+            self.register_buffer(
+                'mask',
+                torch.triu(torch.ones(context_length, context_length), diagonal=1)
+            )
     
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         b, num_tokens, d_in = x.shape
@@ -81,13 +84,13 @@ class MultiHeadAttention(nn.Module):
         keys = keys.transpose(1, 2)
         values = values.transpose(1, 2)
 
-        attn_scores = queries @ keys.transpose(2, 3)
+        attn_scores = queries @ keys.transpose(2, 3)        
 
-        mask_bool = self.mask.bool()[:num_tokens, :num_tokens]
-
-        attn_scores.masked_fill_(
-            mask_bool, -torch.inf
-        )
+        if self.use_causal_mask:
+            mask_bool = self.mask.bool()[:num_tokens, :num_tokens]
+            attn_scores.masked_fill_(
+                mask_bool, -torch.inf
+            )
 
         attn_weights = torch.softmax(
             attn_scores / keys.shape[-1] ** 0.5,
@@ -141,7 +144,7 @@ class ALSTMModel(nn.Module):
         self.ff = FeedForward(self.hidden_size)
         self.output = nn.Linear(self.hidden_size, cfg['output'])
     
-    def forward(self, in_idx):
+    def forward(self, in_idx, output_attention=False):
         x = self.embedding(in_idx)
         x = self.drop_emb(x)
         x = self.lstm(x)
@@ -149,6 +152,9 @@ class ALSTMModel(nn.Module):
 
         x_forward = self.attn_forward(x_forward)
         x_backward = self.attn_backward(x_backward)
+
+        if output_attention:
+            return x_forward
 
         x = torch.concat((x_forward, x_backward), dim=-1)
         x = self.norm2(x)
