@@ -89,6 +89,7 @@ def log_model_train(
 def log_model_train_scenario(
         scenario_num,
         scenario,
+        epoch,
         drop_rate,
         learning_rate,
         weight_decay,
@@ -106,6 +107,7 @@ def log_model_train_scenario(
         'no': 0,
         'scenario_num': str(scenario_num),
         'scenario': str(scenario),
+        'epoch': str(epoch),
         'drop_rate': str(drop_rate),
         'learning_rate': str(learning_rate),
         'weight_decay': str(weight_decay),
