@@ -48,6 +48,7 @@ def log_model_train(
         file='alstm_model.csv',
     ):
     columns = {
+        'no': 0,
         'n_heads': str(n_heads),
         'drop_rate': str(drop_rate),
         'train_acc': str(train_acc),
@@ -56,6 +57,65 @@ def log_model_train(
         'test_loss': str(test_loss),
         'best_model_test_acc': str(best_model_test_acc),
         'best_model_test_loss': str(best_model_test_loss),
+        'time': str(time)
+    }
+
+    try:
+        df = pd.read_csv(file)
+        last_index = df.shape[0]+1
+        columns['no'] = str(last_index)
+        
+        text = ''
+        text += f'\n{",".join(columns.values())}'
+
+        with open(file, 'a') as f:
+            f.write(text)
+            f.close()
+
+    # file is not yet created
+    except (FileNotFoundError, pd.errors.EmptyDataError):
+        columns['no'] = '1'
+        text = ','.join(columns.keys())
+        print(columns.values())
+        text += f'\n{",".join(columns.values())}'
+        # create new file
+        with open(file, 'w') as f:
+            f.write(text)
+            f.close()
+
+    finally:
+        print('model logged')
+
+def log_model_train_scenario(
+        scenario_num,
+        scenario,
+        drop_rate,
+        learning_rate,
+        weight_decay,
+        vocabulary,
+        n_heads,
+        vocabulary_total,
+        train_acc,
+        test_acc,
+        train_loss,
+        test_loss,
+        time,
+        file='alstm_model.csv',
+    ):
+    columns = {
+        'no': 0,
+        'scenario_num': str(scenario_num),
+        'scenario': str(scenario),
+        'drop_rate': str(drop_rate),
+        'learning_rate': str(learning_rate),
+        'weight_decay': str(weight_decay),
+        'vocabulary': str(vocabulary),
+        'vocabulary_total': str(vocabulary_total),
+        'n_heads': str(n_heads),
+        'train_acc': str(train_acc),
+        'test_acc': str(test_acc),
+        'train_loss': str(train_loss),
+        'test_loss': str(test_loss),
         'time': str(time)
     }
 
