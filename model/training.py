@@ -26,6 +26,7 @@ def train_model(
     best_model_path='best_model.pt',
     best_valid_loss: float = float('inf'),
     log=True,
+    early_stop=None,
     ):
 
     # Initialize best validation loss
@@ -36,6 +37,11 @@ def train_model(
     valid_losses = []
     train_accs = []
     valid_accs = []
+
+    # early stopping
+    if early_stop:
+        early_stop_counter = 0
+        print('early stopping implemented')
     
     for epoch in range(num_epochs):
         # Training
@@ -115,6 +121,18 @@ def train_model(
             torch.save(model.state_dict(), best_model_path)
             if log:
                 print(f'Model saved with validation loss: {best_valid_loss:.4f}')
+        
+        # check for early stopping
+        if early_stop:
+            if epoch_valid_loss > best_valid_loss:
+                early_stop_counter += 1
+                print('early stopping counter:', early_stop_counter)
+                if early_stop_counter >= early_stop:
+                    print('traning is stopped by early stopping')
+                    break
+            else:
+                print('early stopping counter restarted')
+                early_stop_counter = 0
         
         # Update history
         train_losses.append(epoch_train_loss)
