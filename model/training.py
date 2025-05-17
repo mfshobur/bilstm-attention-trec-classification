@@ -3,6 +3,11 @@ import torch
 import torch.nn as nn
 from sklearn.metrics import classification_report, confusion_matrix
 from alstm import ALSTMModel
+from torch.utils.data import DataLoader
+from torch.utils.data import Subset
+import torch.optim as optim
+from sklearn.model_selection import StratifiedKFold
+from copy import deepcopy as dc
 
 def create_model(cfg, preprocessor, copy_embedding=True) -> ALSTMModel:
     """Create model on CPU. Make sure to move model to device"""
@@ -24,13 +29,13 @@ def train_model(
     device: Union[torch.device, str],
     num_epochs: int = 5,
     best_model_path='best_model.pt',
-    best_valid_loss: float = float('inf'),
+    # best_valid_loss: float = float('inf'),
     log=True,
     early_stop=None,
     ):
 
     # Initialize best validation loss
-    best_valid_loss = best_valid_loss
+    best_valid_loss = float('inf')
     
     # Training history
     train_losses = []
@@ -207,6 +212,128 @@ def evaluate_model(model, test_loader, criterion, device, label_names=None, retu
     if return_report:
         return test_loss, test_acc, report, confusion
     return test_loss, test_acc
+
+def cross_validate(
+        cfg,
+        preprocessor,
+        train_dataset,
+        test_dataset,
+        targets,
+        criterion,
+        learning_rate,
+        weight_decay,
+        device,
+        collate_fn,
+        label_names,
+        best_model_path,
+        fold=5,
+        batch_size=32,
+        num_epochs=5,
+        debug=False
+        ):
+    
+    history = {}
+    best_valid_loss = float('inf')
+    # best_valid_acc = 0
+    best_model = None
+
+    skf = StratifiedKFold(n_splits=fold, shuffle=True, random_state=42)
+
+    print(f'Total fold: {fold}')
+    
+    history['train'] = []
+
+    test_loader = DataLoader(
+        test_dataset,
+        batch_size=batch_size,
+        collate_fn=collate_fn)
+
+    for fold_idx, (train_idx, val_idx) in enumerate(skf.split(train_dataset, targets)):
+        print(f"Fold: {fold_idx+1}:")
+        print(f"Train class distribution: {sum(targets[i] for i in train_idx)}")
+        print(f"Validation class distribution: {sum(targets[i] for i in val_idx)}")
+
+        # create model
+        model = create_model(cfg, preprocessor)
+        model.to(device)
+        optimizer = optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=weight_decay)
+        # optimizer_name = type(optimizer).__name__
+
+        # create pytorch subsets
+        train_subset = Subset(train_dataset, train_idx)
+        val_subset = Subset(train_dataset, val_idx)
+        train_loader = DataLoader(
+            train_subset,
+            batch_size=batch_size,
+            drop_last=True,
+            shuffle=True,
+            collate_fn=collate_fn)
+        val_loader = DataLoader(
+            val_subset,
+            batch_size=batch_size,
+            collate_fn=collate_fn)
+        
+        new_fold = train_model(
+            model=model,
+            train_loader=train_loader,
+            valid_loader=val_loader, 
+            criterion=criterion,
+            optimizer=optimizer,
+            device=device,
+            num_epochs=num_epochs,
+            best_model_path=best_model_path,
+            log=debug,
+        )
+
+        history['train'].append(new_fold)
+
+        # update best valid loss
+        fold_best_valid_loss = min(new_fold['valid_losses'])
+        print(f'this fold best valid loss: {fold_best_valid_loss}\n', )
+        if fold_best_valid_loss < best_valid_loss:
+            best_valid_loss = fold_best_valid_loss
+            best_model = dc(model)
+            best_history = new_fold
+            print(f'New model saved from fold {fold_idx+1}\n')
+
+        # fold_best_valid_acc = max(new_fold['valid_accs'])
+        # if fold_best_valid_acc < best_valid_acc:
+        #     best_valid_acc = fold_best_valid_acc
+        #     best_model = dc(model)
+        #     print(f'New model saved from fold {fold+1}\n')
+        
+        del model
+        del optimizer
+            
+    best_model_test_loss, best_model_test_acc, report, conf_mat = evaluate_model(
+        model=best_model,
+        test_loader=test_loader,
+        criterion=criterion,
+        device=device,
+        label_names=label_names,
+        return_report=True
+    )
+    print(f"Final Test Accuracy (best model): {best_model_test_acc:.4f}")
+
+    # save_to_excel(
+    #     drop_rate=cfg['drop_rate'],
+    #     test_acc=f'{best_model_test_acc:.4f}',
+    #     test_loss=f'{best_model_test_loss:.4f}',
+    #     vocab_size=preprocessor.vocab_size,
+    #     n_heads=cfg['n_heads'],
+    #     embedding_trainable=best_model.embedding.weight.requires_grad,
+    #     # optimizer=type(optimizer).__name__,
+    #     optimizer=optimizer_name,
+    #     optimizer_lr=learning_rate,
+    #     weight_decay=weight_decay,
+    #     cv_fold=fold,
+    #     epochs=num_epochs,
+    #     use_stopwords=USE_STOPWORDS,
+    #     notes='change feed forward linear into times 2'
+    # )
+    
+    # return history, best_model
+    return best_history, best_model_test_acc, best_model_test_loss, report, conf_mat, best_model
 
 if __name__ == "__main__":
     pass
