@@ -29,13 +29,13 @@ def train_model(
     device: Union[torch.device, str],
     num_epochs: int = 5,
     best_model_path='best_model.pt',
-    # best_valid_loss: float = float('inf'),
+    best_valid_loss: float = float('inf'),
     log=True,
     early_stop=None,
     ):
 
     # Initialize best validation loss
-    best_valid_loss = float('inf')
+    best_valid_loss = best_valid_loss
     
     # Training history
     train_losses = []
@@ -283,6 +283,7 @@ def cross_validate(
             num_epochs=num_epochs,
             best_model_path=best_model_path,
             log=debug,
+            best_valid_loss=best_valid_loss
         )
 
         history['train'].append(new_fold)
