@@ -1,3 +1,4 @@
+from collections import Counter
 from typing import Union
 import torch
 import torch.nn as nn
@@ -213,6 +214,15 @@ def evaluate_model(model, test_loader, criterion, device, label_names=None, retu
         return test_loss, test_acc, report, confusion
     return test_loss, test_acc
 
+def log_class_distribution(labels, name):
+    """Log the class distribution of the labels"""
+    counter = Counter(labels)
+    total = sum(counter.values())
+    print(f"{name} class distribution (%):")
+    for cls, count in sorted(counter.items()):
+        pct = 100 * count / total
+        print(f"  Class {cls}: {count} ({pct:.2f}%)")
+
 def cross_validate(
         cfg,
         preprocessor,
@@ -249,9 +259,15 @@ def cross_validate(
         collate_fn=collate_fn)
 
     for fold_idx, (train_idx, val_idx) in enumerate(skf.split(train_dataset, targets)):
+        train_labels = [targets[i] for i in train_idx]
+        val_labels = [targets[i] for i in val_idx]
         print(f"Fold: {fold_idx+1}:")
-        print(f"Train class distribution: {sum(targets[i] for i in train_idx)}")
-        print(f"Validation class distribution: {sum(targets[i] for i in val_idx)}")
+        log_class_distribution(train_labels, "Train")
+        log_class_distribution(val_labels, "Validation")
+        # print("Train class distribution:", Counter(train_labels))
+        # print("Validation class distribution:", Counter(val_labels))
+        # print(f"Train class distribution: {sum(targets[i] for i in train_idx)}")
+        # print(f"Validation class distribution: {sum(targets[i] for i in val_idx)}")
 
         # create model
         model = create_model(cfg, preprocessor)
