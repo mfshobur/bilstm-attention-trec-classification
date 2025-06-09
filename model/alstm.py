@@ -67,7 +67,7 @@ class MultiHeadAttention(nn.Module):
                 torch.triu(torch.ones(context_length, context_length), diagonal=1)
             )
     
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
+    def forward(self, x: torch.Tensor, output_attention: False) -> torch.Tensor:
         b, num_tokens, d_in = x.shape
 
         queries = self.W_query(x)
@@ -98,6 +98,9 @@ class MultiHeadAttention(nn.Module):
         )
         attn_weights = self.dropout(attn_weights)
 
+        if output_attention:
+            return attn_weights
+
         # reshape from (b, num_heads, num_tokens, head_dim) to (b, num_tokens, num_heads, head_dim)
         context_vec = (attn_weights @ values).transpose(1, 2)
 
@@ -108,7 +111,9 @@ class MultiHeadAttention(nn.Module):
 class ALSTMModel(nn.Module):
     def __init__(self, cfg):
         super().__init__()
+        self.use_attention = cfg['use_attention'] if cfg['use_attention'] is not None else True
         self.num_directions = 2 if cfg['bidirectional'] else 1
+        # self.hidden_size = cfg['hidden_size'] * self.num_directions if cfg['use_attention'] else cfg['hidden_size']
         self.hidden_size = cfg['hidden_size'] * self.num_directions
         self.embedding = nn.Embedding(cfg['vocab_size'], cfg['emb_dim'], padding_idx=0)
         self.drop_emb = nn.Dropout(cfg['drop_rate'])
@@ -121,23 +126,25 @@ class ALSTMModel(nn.Module):
             dropout=cfg['drop_rate'],
             device=cfg['device']
         )
-        self.attn_forward = MultiHeadAttention(
-            d_in=cfg['hidden_size'],
-            d_out=cfg['hidden_size'],
-            context_length=cfg['context_length'],
-            num_heads=cfg['n_heads'],
-            dropout=cfg['drop_rate'],
-            qkv_bias=cfg['qkv_bias']
-        )
         
-        self.attn_backward = MultiHeadAttention(
-            d_in=cfg['hidden_size'],
-            d_out=cfg['hidden_size'],
-            context_length=cfg['context_length'],
-            num_heads=cfg['n_heads'],
-            dropout=cfg['drop_rate'],
-            qkv_bias=cfg['qkv_bias']
-        )
+        if self.use_attention:
+            self.attn_forward = MultiHeadAttention(
+                d_in=cfg['hidden_size'],
+                d_out=cfg['hidden_size'],
+                context_length=cfg['context_length'],
+                num_heads=cfg['n_heads'],
+                dropout=cfg['drop_rate'],
+                qkv_bias=cfg['qkv_bias']
+            )
+            
+            self.attn_backward = MultiHeadAttention(
+                d_in=cfg['hidden_size'],
+                d_out=cfg['hidden_size'],
+                context_length=cfg['context_length'],
+                num_heads=cfg['n_heads'],
+                dropout=cfg['drop_rate'],
+                qkv_bias=cfg['qkv_bias']
+            )
          
 
         self.norm2 = nn.LayerNorm(self.hidden_size)
@@ -148,15 +155,16 @@ class ALSTMModel(nn.Module):
         x = self.embedding(in_idx)
         x = self.drop_emb(x)
         x = self.lstm(x)
-        x_forward, x_backward = torch.chunk(x, 2, dim=-1)
+        if self.use_attention:
+            x_forward, x_backward = torch.chunk(x, 2, dim=-1)
 
-        x_forward = self.attn_forward(x_forward)
-        x_backward = self.attn_backward(x_backward)
+            x_forward = self.attn_forward(x_forward, output_attention)
+            x_backward = self.attn_backward(x_backward, output_attention)
 
-        if output_attention:
-            return x_forward
+            if output_attention:
+                return x_forward, x_backward
 
-        x = torch.concat((x_forward, x_backward), dim=-1)
+            x = torch.concat((x_forward, x_backward), dim=-1)
         x = self.norm2(x)
         x = self.ff(x)
         logits = self.output(x)
