@@ -1,3 +1,5 @@
+LAKUKAN UJI COBA MODEL TANPA ATTENTION DENGAN HYPERPARAMETER GRIDSEARCH TERBAIK
+
 Jum'at, 21-03-2025
 
 1. 
@@ -59,6 +61,15 @@ COARSE_LABEL =
     5 = "NUM"
 ]
 
+COARSE_LABEL = 
+[
+    0 = "ENTY",
+    1 = "DESC",
+    2 = "HUM",
+    3 = "LOC",
+    4 = "NUM"
+]
+
 
 
 
@@ -76,3 +87,39 @@ revise:
 30 April 2025
 task:
 - train current model with variety of dropout value
+
+=================================================
+5 May 2025
+
+code:
+- ambil model early stopping
+- vocabulary size
+- tampilkan visualisasi heatmap attention (best & worst model)
+- tumpuk multi head attention
+- uji coba epoch, dropout, learning rate
+
+penulisan:
+- menghindari stopwrod krna kalimat tanya adalah stopword list
+- fokus ke dropout 0.6
+- jelaskan skenario data preprocessing (tabel) 
+
+question for next meet:
+code:
+- masked multi head attention, hapus mask-nya?
+
+
+penulisan:
+- apakah backpropagation harus dijelaskan lebih lanjut
+- singkatan
+- penggunaan kata data training/data latih
+- cek semua kata data apakah dicetak miring
+
+
+what to prepare for scenario training:
+- implement early stopping
+- implement looping, save the best model
+
+
+
+
+--

@@ -151,21 +151,44 @@ class ALSTMModel(nn.Module):
         self.ff = FeedForward(self.hidden_size)
         self.output = nn.Linear(self.hidden_size, cfg['output'])
     
-    def forward(self, in_idx, output_attention=False):
+    def forward(self, in_idx, output_attention=False, log=False):
         x = self.embedding(in_idx)
+        if log:
+            print(f'embedding shape: {x.shape}\nembedding: {x}\n')
+            
         x = self.drop_emb(x)
+        if log:
+            print(f'after dropout shape: {x.shape}\nafter dropout: {x}\n')
+            
         x = self.lstm(x)
+        if log:
+            print(f'after LSTM shape: {x.shape}\nafter LSTM: {x}\n')
+
         if self.use_attention:
             x_forward, x_backward = torch.chunk(x, 2, dim=-1)
+            if log:
+                print(f'LSTM forward shape: {x_forward.shape}\nLSTM forward: {x_forward}\n')
+                print(f'LSTM backward shape: {x_backward.shape}\nLSTM backward: {x_backward}\n')
 
             x_forward = self.attn_forward(x_forward, output_attention)
             x_backward = self.attn_backward(x_backward, output_attention)
+            if log:
+                print(f'x_forward shape: {x_forward.shape}\nx_forward: {x_forward}\n')
+                print(f'x_backward shape: {x_backward.shape}\nx_backward: {x_backward}\n')
 
             if output_attention:
                 return x_forward, x_backward
 
             x = torch.concat((x_forward, x_backward), dim=-1)
+            if log:
+                print(f'concat shape: {x.shape}\nconcat: {x}\n')
+
         x = self.norm2(x)
+        if log:
+            print(f'after norm shape: {x.shape}\nafter norm: {x}\n')
+
         x = self.ff(x)
+        if log:
+            print(f'after feed forward shape: {x.shape}\nafter feed forward: {x}\n')
         logits = self.output(x)
         return logits[:, -1, :]

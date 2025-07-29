@@ -1,0 +1,492 @@
+,text,coarse_label,fine_label,n_head_0,n_head_1,n_head_2,n_head_3,n_head_5,n_head_10,n_head_25,n_head_30,n_head_50
+0,How far is it from Denver to Aspen ?,4,40,4,4,4,4,4,4,4,4,4
+1,"What county is Modesto , California in ?",3,32,3,3,3,3,3,3,3,3,3
+2,Who was Galileo ?,2,31,2,2,2,2,2,2,2,2,2
+3,What is an atom ?,1,24,1,1,1,1,1,1,1,1,1
+4,When did Hawaii become a state ?,4,39,4,4,4,4,4,4,4,4,4
+5,How tall is the Sears Building ?,4,40,4,4,4,4,4,4,4,4,4
+6,George Bush purchased a small interest in which baseball team ?,2,28,2,2,2,2,2,2,2,2,2
+7,What is Australia 's national flower ?,0,14,0,0,0,3,3,0,0,3,0
+8,Why does the moon turn orange ?,1,27,1,1,1,1,1,1,1,1,1
+9,What is autism ?,1,24,1,1,1,1,1,1,1,1,1
+10,What city had a world fair in 1900 ?,3,32,3,3,3,3,3,3,3,3,3
+11,What person 's head is on a dime ?,2,29,2,2,2,2,2,2,2,2,2
+12,What is the average weight of a Yellow Labrador ?,4,49,4,4,4,4,4,4,4,4,4
+13,Who was the first man to fly across the Pacific Ocean ?,2,29,2,2,2,2,2,2,2,2,2
+14,When did Idaho become a state ?,4,39,4,4,4,4,4,4,4,4,4
+15,What is the life expectancy for crickets ?,4,43,4,1,0,1,4,4,0,4,1
+16,What metal has the highest melting point ?,0,18,0,0,0,0,0,0,0,0,0
+17,Who developed the vaccination against polio ?,2,29,2,2,2,2,2,2,2,2,2
+18,What is epilepsy ?,1,24,1,1,1,1,1,1,1,1,1
+19,What year did the Titanic sink ?,4,39,4,4,4,4,4,4,4,4,4
+20,Who was the first American to walk in space ?,2,29,2,2,2,2,2,2,2,2,2
+21,What is a biosphere ?,1,24,1,1,1,1,1,1,1,1,1
+22,What river in the US is known as the Big Muddy ?,3,35,3,3,3,3,3,3,3,3,3
+23,What is bipolar disorder ?,1,24,1,1,1,1,1,1,1,1,1
+24,What is cholesterol ?,1,24,1,1,1,1,1,1,1,1,1
+25,Who developed the Macintosh computer ?,2,29,2,2,2,2,2,2,2,2,2
+26,What is caffeine ?,1,24,1,1,1,1,1,1,1,1,1
+27,What imaginary line is halfway between the North and South Poles ?,3,35,0,3,0,3,0,3,3,3,0
+28,Where is John Wayne airport ?,3,35,3,3,3,3,3,3,3,3,3
+29,What hemisphere is the Philippines in ?,3,35,3,3,3,3,3,3,3,3,3
+30,What is the average speed of the horses at the Kentucky Derby ?,4,46,4,4,4,4,4,4,4,4,4
+31,Where are the Rocky Mountains ?,3,34,3,3,3,3,3,3,3,3,3
+32,What are invertebrates ?,1,24,1,1,1,1,1,1,1,1,1
+33,What is the temperature at the center of the earth ?,4,47,4,4,4,4,4,4,4,4,4
+34,When did John F. Kennedy get elected as President ?,4,39,4,4,4,4,4,4,4,4,4
+35,How old was Elvis Presley when he died ?,4,44,4,4,4,4,4,4,4,4,4
+36,Where is the Orinoco River ?,3,35,3,3,3,3,3,3,3,3,3
+37,How far is the service line from the net in tennis ?,4,40,4,4,4,4,4,4,4,4,4
+38,How much fiber should you have per day ?,4,38,4,4,4,4,4,4,4,4,4
+39,How many Great Lakes are there ?,4,38,4,4,4,4,4,4,4,4,4
+40,Material called linen is made from what plant ?,0,14,0,0,0,0,0,0,0,0,0
+41,What is Teflon ?,1,24,1,1,1,1,1,1,1,1,1
+42,What is amitriptyline ?,1,24,1,1,1,1,1,1,1,1,1
+43,What is a shaman ?,1,24,1,1,1,1,1,1,1,1,1
+44,What is the proper name for a female walrus ?,0,2,0,0,0,0,0,0,0,0,0
+45,What is a group of turkeys called ?,0,2,0,0,0,0,0,0,0,0,0
+46,How long did Rip Van Winkle sleep ?,4,44,4,4,4,4,4,4,4,4,4
+47,What are triglycerides ?,1,24,1,1,1,1,1,1,1,1,1
+48,How many liters in a gallon ?,4,38,4,4,4,4,4,4,4,4,4
+49,What is the name of the chocolate company in San Francisco ?,2,28,2,2,0,0,0,0,2,0,0
+50,What are amphibians ?,1,24,1,1,1,1,1,1,1,1,1
+51,Who discovered x-rays ?,2,29,2,2,2,2,2,2,2,2,2
+52,Which comedian 's signature line is `` Can we talk '' ?,2,29,2,2,2,2,2,2,2,2,2
+53,What is fibromyalgia ?,1,24,1,1,1,1,1,1,1,1,1
+54,What is done with worn or outdated flags ?,1,25,0,1,0,1,1,0,1,1,0
+55,What does cc in engines mean ?,1,24,1,1,1,1,1,1,1,1,1
+56,When did Elvis Presley die ?,4,39,4,4,4,4,4,4,4,4,4
+57,What is the capital of Yugoslavia ?,3,32,3,3,3,3,3,3,3,3,3
+58,Where is Milan ?,3,32,3,3,3,3,3,3,3,3,3
+59,What is the speed hummingbirds fly ?,4,46,4,4,0,4,4,4,4,4,0
+60,What is the oldest city in the United States ?,3,32,3,3,3,3,3,3,3,3,3
+61,What was W.C. Fields ' real name ?,2,29,1,2,2,2,1,2,2,2,2
+62,"What river flows between Fargo , North Dakota and Moorhead , Minnesota ?",3,35,3,3,3,3,3,3,3,3,3
+63,What do bats eat ?,0,9,0,0,0,0,0,0,0,0,0
+64,What state did the Battle of Bighorn take place in ?,3,36,3,3,3,3,3,3,3,3,3
+65,Who was Abraham Lincoln ?,2,31,2,2,2,2,2,2,2,2,2
+66,What do you call a newborn kangaroo ?,0,21,0,0,0,0,0,0,0,0,0
+67,What are spider veins ?,1,24,1,1,1,1,1,1,1,1,1
+68,What day and month did John Lennon die ?,4,39,4,4,4,4,4,4,4,4,4
+69,What strait separates North America from Asia ?,3,35,3,3,3,3,3,3,3,3,3
+70,What is the population of Seattle ?,4,43,4,4,4,4,4,4,4,4,4
+71,How much was a ticket for the Titanic ?,4,41,4,4,4,4,4,4,4,4,4
+72,What is the largest city in the world ?,3,32,3,3,3,3,3,3,3,3,3
+73,What American composer wrote the music for `` West Side Story '' ?,2,29,2,2,2,2,2,2,2,2,2
+74,Where is the Mall of the America ?,3,35,3,3,3,3,3,3,3,3,3
+75,What is the pH scale ?,1,24,1,1,1,1,1,1,1,1,1
+76,What type of currency is used in Australia ?,0,6,0,0,0,0,0,0,0,0,0
+77,"How tall is the Gateway Arch in St. Louis , MO ?",4,40,4,4,4,4,4,4,4,4,4
+78,How much does the human adult female brain weigh ?,4,49,4,4,4,4,4,4,4,4,4
+79,Who was the first governor of Alaska ?,2,29,2,2,2,2,2,2,2,2,2
+80,What is a prism ?,1,24,1,1,1,1,1,1,1,1,1
+81,When was the first liver transplant ?,4,39,4,4,4,4,4,4,4,4,4
+82,Who was elected president of South Africa in 1994 ?,2,29,2,2,2,2,2,2,2,2,2
+83,What is the population of China ?,4,43,4,4,4,4,4,4,4,4,4
+84,When was Rosa Parks born ?,4,39,4,4,4,4,4,4,4,4,4
+85,Why is a ladybug helpful ?,1,27,1,1,1,1,1,1,1,1,1
+86,What is amoxicillin ?,1,24,1,1,1,1,1,1,1,1,1
+87,Who was the first female United States Representative ?,2,29,2,2,2,2,2,2,2,2,2
+88,What are xerophytes ?,1,24,1,1,1,1,1,1,1,1,1
+89,What country did Ponce de Leon come from ?,3,33,3,3,3,3,3,3,3,3,3
+90,The U.S. Department of Treasury first issued paper currency for the U.S. during which war ?,0,8,2,2,2,2,2,2,2,2,2
+91,What is desktop publishing ?,1,24,1,1,1,1,1,1,1,1,1
+92,What is the temperature of the sun 's surface ?,4,47,4,4,4,4,4,4,4,4,4
+93,What year did Canada join the United Nations ?,4,39,4,4,4,4,4,4,4,4,4
+94,What is the oldest university in the US ?,2,28,3,2,3,3,3,3,3,3,3
+95,Where is Prince Edward Island ?,3,35,3,3,3,3,3,3,3,3,3
+96,"Mercury , what year was it discovered ?",4,39,4,4,4,4,4,4,4,4,4
+97,What is cryogenics ?,1,24,1,1,1,1,1,1,1,1,1
+98,What are coral reefs ?,1,24,1,0,0,1,1,1,1,1,1
+99,What is the longest major league baseball-winning streak ?,0,13,0,0,0,0,0,0,0,0,0
+100,What is neurology ?,1,24,1,1,1,1,1,1,1,1,1
+101,Who invented the calculator ?,2,29,2,2,2,2,2,2,2,2,2
+102,How do you measure earthquakes ?,1,26,1,1,1,1,1,1,1,1,1
+103,Who is Duke Ellington ?,2,31,2,2,2,2,2,2,2,2,2
+104,"What county is Phoenix , AZ in ?",3,32,3,3,3,3,3,3,3,3,3
+105,What is a micron ?,1,24,1,1,1,1,1,1,1,1,1
+106,"The sun 's core , what is the temperature ?",4,47,4,4,4,4,4,4,4,4,4
+107,What is the Ohio state bird ?,0,2,0,0,0,3,0,0,0,0,0
+108,When were William Shakespeare 's twins born ?,4,39,4,4,4,4,4,4,4,4,4
+109,What is the highest dam in the U.S. ?,3,35,3,3,3,3,3,3,3,3,3
+110,What color is a poison arrow frog ?,0,4,0,0,0,0,0,0,0,0,0
+111,What is acupuncture ?,1,24,1,1,1,1,1,1,1,1,1
+112,What is the length of the coastline of the state of Alaska ?,4,40,4,4,4,4,4,4,4,4,4
+113,What is the name of Neil Armstrong 's wife ?,2,29,2,2,2,2,2,2,2,2,2
+114,What is Hawaii 's state flower ?,0,14,0,0,3,3,3,3,0,3,3
+115,Who won Ms. American in 1989 ?,2,29,2,2,2,2,2,2,2,2,2
+116,When did the Hindenberg crash ?,4,39,4,4,4,4,4,4,4,4,4
+117,What mineral helps prevent osteoporosis ?,0,18,0,0,0,0,0,0,0,0,0
+118,What was the last year that the Chicago Cubs won the World Series ?,4,39,4,4,4,4,4,4,4,0,4
+119,Where is Perth ?,3,35,3,3,3,3,3,3,3,3,3
+120,What year did WWII begin ?,4,39,4,4,4,4,4,4,4,4,4
+121,What is the diameter of a golf ball ?,4,40,4,4,4,4,4,4,4,4,4
+122,What is an eclipse ?,1,24,1,1,1,1,1,1,1,1,1
+123,Who discovered America ?,2,29,2,2,2,2,2,2,2,2,2
+124,What is the earth 's diameter ?,4,40,1,1,1,1,1,1,1,4,1
+125,Which president was unmarried ?,2,29,2,2,2,2,2,2,2,2,2
+126,How wide is the Milky Way galaxy ?,4,40,4,4,4,4,4,4,4,4,4
+127,During which season do most thunderstorms occur ?,4,39,4,4,4,4,4,4,4,4,4
+128,What is Wimbledon ?,1,24,1,1,1,1,1,1,1,1,1
+129,What is the gestation period for a cat ?,4,44,4,4,4,4,4,4,4,4,4
+130,How far is a nautical mile ?,4,40,4,4,4,4,4,4,4,4,4
+131,Who was the abolitionist who led the raid on Harper 's Ferry in 1859 ?,2,29,2,2,2,2,2,2,2,2,2
+132,What does target heart rate mean ?,1,24,1,1,1,1,1,1,1,4,1
+133,What was the first satellite to go into space ?,0,15,0,0,3,0,0,0,0,0,0
+134,What is foreclosure ?,1,24,1,1,1,1,1,1,1,1,1
+135,What is the major fault line near Kentucky ?,0,13,3,3,3,3,1,1,1,3,1
+136,Where is the Holland Tunnel ?,3,35,3,3,3,3,3,3,3,3,3
+137,Who wrote the hymn `` Amazing Grace '' ?,2,29,2,2,2,2,2,2,2,2,2
+138,What position did Willie Davis play in baseball ?,2,30,2,0,0,0,0,0,2,0,0
+139,What are platelets ?,1,24,1,1,1,1,1,1,1,1,1
+140,What is severance pay ?,1,24,1,1,1,1,1,1,1,1,1
+141,What is the name of Roy Roger 's dog ?,0,2,0,0,0,0,0,0,0,0,0
+142,Where are the National Archives ?,3,35,3,3,3,3,3,3,3,3,3
+143,What is a baby turkey called ?,0,2,1,0,1,1,1,0,1,1,0
+144,What is poliomyelitis ?,1,24,1,1,1,1,1,1,1,1,1
+145,What is the longest bone in the human body ?,0,3,0,0,0,0,0,0,0,0,0
+146,Who is a German philosopher ?,2,29,2,2,2,2,2,2,2,2,2
+147,What were Christopher Columbus ' three ships ?,0,22,0,0,0,0,0,0,0,0,0
+148,What does Phi Beta Kappa mean ?,1,24,1,1,1,1,1,1,1,1,1
+149,What is nicotine ?,1,24,1,1,1,1,1,1,1,1,1
+150,What is another name for vitamin B1 ?,0,21,0,0,0,0,0,0,0,0,0
+151,Who discovered radium ?,2,29,2,2,2,2,2,2,2,2,2
+152,What are sunspots ?,1,24,1,1,1,1,1,1,1,1,1
+153,When was Algeria colonized ?,4,39,4,4,4,4,4,4,4,4,4
+154,What baseball team was the first to make numbers part of their uniform ?,2,28,2,2,2,2,2,2,2,2,2
+155,What continent is Egypt on ?,3,35,3,3,3,3,3,3,3,3,3
+156,What is the capital of Mongolia ?,3,32,3,3,3,3,3,3,3,3,3
+157,What is nanotechnology ?,1,24,1,1,1,1,1,1,1,1,1
+158,In the late 1700 's British convicts were used to populate which colony ?,3,35,0,2,4,2,2,4,3,0,4
+159,What state is the geographic center of the lower 48 states ?,3,36,3,3,3,3,3,3,3,3,3
+160,What is an obtuse angle ?,1,24,1,1,1,1,1,1,1,1,1
+161,What are polymers ?,1,24,1,1,1,1,1,1,1,1,1
+162,When is hurricane season in the Caribbean ?,4,39,4,4,4,4,4,4,4,4,4
+163,Where is the volcano Mauna Loa ?,3,35,3,3,3,3,3,3,3,3,3
+164,What is another astronomic term for the Northern Lights ?,0,21,0,1,3,1,4,1,1,4,1
+165,What peninsula is Spain part of ?,3,35,3,3,3,3,3,3,3,3,3
+166,When was Lyndon B. Johnson born ?,4,39,4,4,4,4,4,4,4,4,4
+167,What is acetaminophen ?,1,24,1,1,1,1,1,1,1,1,1
+168,What state has the least amount of rain per year ?,3,36,3,3,3,3,3,3,3,3,3
+169,Who founded American Red Cross ?,2,29,2,2,2,2,2,2,2,2,2
+170,What year did the Milwaukee Braves become the Atlanta Braves ?,4,39,4,4,4,4,4,4,4,4,4
+171,How fast is alcohol absorbed ?,4,46,4,4,4,4,4,4,4,4,4
+172,When is the summer solstice ?,4,39,4,4,4,4,4,4,4,4,4
+173,What is supernova ?,1,24,1,1,1,1,1,1,1,1,1
+174,Where is the Shawnee National Forest ?,3,35,3,3,3,3,3,3,3,3,3
+175,What U.S. state 's motto is `` Live free or Die '' ?,3,36,3,3,3,3,3,3,3,3,3
+176,Where is the Lourve ?,3,35,3,3,3,3,3,3,3,3,3
+177,When was the first stamp issued ?,4,39,4,4,4,4,4,4,4,4,4
+178,What primary colors do you mix to make orange ?,0,4,0,0,0,0,0,0,0,0,0
+179,How far is Pluto from the sun ?,4,40,4,4,4,4,4,4,4,4,4
+180,What body of water are the Canary Islands in ?,3,35,3,3,3,0,0,3,3,3,0
+181,What is neuropathy ?,1,24,1,1,1,1,1,1,1,1,1
+182,Where is the Euphrates River ?,3,35,3,3,3,3,3,3,3,3,3
+183,What is cryptography ?,1,24,1,1,1,1,1,1,1,1,1
+184,What is natural gas composed of ?,0,18,0,0,0,0,0,1,0,0,0
+185,Who is the Prime Minister of Canada ?,2,29,2,2,2,2,2,2,2,2,2
+186,What French ruler was defeated at the battle of Waterloo ?,2,29,2,2,2,2,2,2,2,2,2
+187,What is leukemia ?,1,24,1,1,1,1,1,1,1,1,1
+188,Where did Howard Hughes die ?,3,35,3,3,3,3,3,3,3,3,3
+189,What is the birthstone for June ?,0,18,0,0,0,1,1,0,0,4,0
+190,What is the sales tax in Minnesota ?,0,13,4,4,4,4,4,4,4,4,4
+191,What is the distance in miles from the earth to the sun ?,4,40,4,4,3,4,4,3,4,4,4
+192,What is the average life span for a chicken ?,4,44,4,4,4,4,4,4,4,4,4
+193,When was the first Wal-Mart store opened ?,4,39,4,4,4,4,4,4,4,4,4
+194,What is relative humidity ?,1,24,1,1,1,1,4,1,1,4,1
+195,What city has the zip code of 35824 ?,3,32,3,3,3,3,3,3,3,3,3
+196,What currency is used in Algeria ?,0,6,0,0,0,0,0,0,0,0,0
+197,Who invented the hula hoop ?,2,29,2,2,2,2,2,2,2,2,2
+198,What was the most popular toy in 1957 ?,0,15,0,0,0,0,0,0,0,0,0
+199,What is pastrami made of ?,0,18,0,0,0,1,0,0,0,0,0
+200,What is the name of the satellite that the Soviet Union sent into space in 1957 ?,0,15,2,2,2,2,2,2,2,2,2
+201,What city 's newspaper is called `` The Enquirer '' ?,3,32,3,3,3,3,3,3,3,3,3
+202,Who invented the slinky ?,2,29,2,2,2,2,2,2,2,2,2
+203,What are the animals that don 't have backbones called ?,0,2,0,0,0,0,0,0,0,0,0
+204,What is the melting point of copper ?,4,43,1,1,4,4,1,1,0,4,4
+205,Where is the volcano Olympus Mons located ?,3,35,3,3,3,3,3,3,3,3,3
+206,Who was the 23rd president of the United States ?,2,29,2,2,2,2,2,2,2,2,2
+207,What is the average body temperature ?,4,47,4,4,4,4,4,4,4,4,4
+208,What does a defibrillator do ?,1,25,1,0,1,1,1,1,1,1,1
+209,What is the effect of acid rain ?,1,25,1,1,1,1,1,1,1,1,1
+210,What year did the United States abolish the draft ?,4,39,4,4,4,4,4,4,4,4,4
+211,How fast is the speed of light ?,4,46,4,4,4,4,4,4,4,4,4
+212,What province is Montreal in ?,3,36,3,3,3,3,3,3,3,3,3
+213,What New York City structure is also known as the Twin Towers ?,3,35,3,3,3,3,3,3,3,3,3
+214,What is fungus ?,1,24,1,1,1,1,1,1,1,1,1
+215,What is the most frequently spoken language in the Netherlands ?,0,11,0,0,0,0,0,0,0,0,0
+216,What is sodium chloride ?,1,24,1,1,1,1,1,1,1,1,1
+217,What are the spots on dominoes called ?,0,21,0,0,0,0,0,0,0,0,0
+218,How many pounds in a ton ?,4,38,4,4,4,4,4,4,4,4,4
+219,What is influenza ?,1,24,1,1,1,1,1,1,1,1,1
+220,What is ozone depletion ?,1,24,1,1,1,1,1,1,1,1,1
+221,What year was the Mona Lisa painted ?,4,39,4,4,4,4,4,4,4,4,4
+222,What does `` Sitting Shiva '' mean ?,1,24,1,1,1,1,1,1,1,1,1
+223,"What is the electrical output in Madrid , Spain ?",0,13,4,4,4,4,4,0,4,4,0
+224,Which mountain range in North America stretches from Maine to Georgia ?,3,34,3,3,3,3,3,3,3,3,3
+225,What is plastic made of ?,0,18,0,0,0,0,0,0,0,0,0
+226,What is the population of Nigeria ?,4,43,4,4,4,4,4,4,4,4,4
+227,What does your spleen do ?,1,25,1,1,1,1,1,1,1,1,1
+228,Where is the Grand Canyon ?,3,35,3,3,3,3,3,3,3,3,3
+229,Who invented the telephone ?,2,29,2,2,2,2,2,2,2,2,2
+230,What year did the U.S. buy Alaska ?,4,39,4,4,4,4,4,4,4,4,4
+231,What is the name of the leader of Ireland ?,2,29,2,2,2,0,2,2,2,0,2
+232,What is phenylalanine ?,1,24,1,1,1,1,1,1,1,1,1
+233,How many gallons of water are there in a cubic foot ?,4,38,4,4,4,4,4,4,4,4,4
+234,What are the two houses of the Legislative branch ?,0,13,3,3,3,3,3,3,3,3,3
+235,What is sonar ?,1,24,1,1,1,1,1,1,1,1,1
+236,"In Poland , where do most people live ?",3,35,3,3,3,3,3,3,3,3,3
+237,What is phosphorus ?,1,24,1,1,1,1,1,1,1,1,1
+238,What is the location of the Sea of Tranquility ?,3,35,3,3,3,3,3,3,3,3,3
+239,How fast is sound ?,4,46,4,4,4,4,4,4,4,4,4
+240,What French province is cognac produced in ?,3,36,3,3,3,3,3,3,3,3,3
+241,What is Valentine 's Day ?,1,24,4,1,1,1,1,1,1,4,1
+242,What causes gray hair ?,1,27,1,1,1,1,1,1,1,1,1
+243,What is hypertension ?,1,24,1,1,1,1,1,1,1,1,1
+244,What is bandwidth ?,1,24,1,1,1,1,1,1,1,1,1
+245,What is the longest suspension bridge in the U.S. ?,3,35,3,3,3,3,0,3,3,3,0
+246,What is a parasite ?,1,24,1,1,1,1,1,1,1,1,1
+247,What is home equity ?,1,24,1,1,1,1,1,1,1,1,1
+248,What do meteorologists do ?,1,25,1,1,1,1,1,1,1,1,1
+249,What is the criterion for being legally blind ?,0,13,1,1,1,1,1,1,1,0,0
+250,Who is the tallest man in the world ?,2,29,2,2,2,2,2,2,2,2,2
+251,What are the twin cities ?,3,32,1,3,3,3,3,3,1,3,3
+252,What did Edward Binney and Howard Smith invent in 1903 ?,0,13,0,0,0,0,0,0,0,0,0
+253,What is the statue of liberty made of ?,0,18,0,0,0,0,0,0,0,0,0
+254,What is pilates ?,1,24,1,1,1,1,1,1,1,1,1
+255,What planet is known as the `` red '' planet ?,3,35,3,3,3,3,3,3,3,3,3
+256,What is the depth of the Nile river ?,4,40,4,3,3,3,4,4,1,4,4
+257,What is the colorful Korean traditional dress called ?,0,21,0,0,0,0,0,0,1,0,0
+258,What is Mardi Gras ?,1,24,1,1,1,1,1,1,1,1,1
+259,Mexican pesos are worth what in U.S. dollars ?,4,41,0,4,4,4,4,4,4,4,0
+260,Who was the first African American to play for the Brooklyn Dodgers ?,2,29,2,2,2,2,2,2,2,2,2
+261,Who was the first Prime Minister of Canada ?,2,29,2,2,2,2,2,2,2,2,2
+262,How many Admirals are there in the U.S. Navy ?,4,38,4,4,4,4,4,4,4,4,4
+263,What instrument did Glenn Miller play ?,0,10,0,0,0,0,0,0,0,0,0
+264,How old was Joan of Arc when she died ?,4,44,4,4,4,4,4,4,4,4,4
+265,What does the word fortnight mean ?,1,24,1,1,1,1,1,1,1,1,1
+266,What is dianetics ?,1,24,1,1,1,1,1,1,1,1,1
+267,What is the capital of Ethiopia ?,3,32,3,3,3,3,3,3,3,3,3
+268,For how long is an elephant pregnant ?,4,44,4,4,4,4,4,4,4,4,4
+269,How did Janice Joplin die ?,1,26,1,1,1,1,1,1,1,1,1
+270,What is the primary language in Iceland ?,0,11,0,0,0,0,0,0,0,0,0
+271,What is the difference between AM radio stations and FM radio stations ?,1,25,1,1,1,4,1,1,1,1,1
+272,What is osteoporosis ?,1,24,1,1,1,1,1,1,1,1,1
+273,Who was the first woman governor in the U.S. ?,2,29,2,2,2,2,2,2,2,2,2
+274,What is peyote ?,1,24,1,1,1,1,1,1,1,1,1
+275,What is the esophagus used for ?,1,27,0,1,0,1,1,0,1,1,1
+276,What is viscosity ?,1,24,1,1,1,1,1,1,1,1,1
+277,What year did Oklahoma become a state ?,4,39,4,4,4,4,4,4,4,4,4
+279,What is a mirror made out of ?,0,18,0,0,0,0,0,0,0,0,0
+280,Where on the body is a mortarboard worn ?,3,35,3,3,3,3,3,3,3,3,3
+281,What was J.F.K. 's wife 's name ?,2,29,2,2,2,2,2,2,2,2,2
+283,What is the chunnel ?,1,24,1,1,1,1,1,1,1,1,1
+284,Where is Hitler buried ?,3,35,3,3,3,3,3,3,3,3,3
+285,What are antacids ?,1,24,1,1,1,1,1,1,1,1,1
+286,What is pulmonary fibrosis ?,1,24,1,1,1,1,1,1,1,1,1
+287,What are Quaaludes ?,1,24,1,1,1,1,1,1,1,1,1
+288,What is naproxen ?,1,24,1,1,1,1,1,1,1,1,1
+289,What is strep throat ?,1,24,1,1,1,1,1,1,1,1,1
+290,What is the largest city in the U.S. ?,3,32,3,3,3,3,3,3,3,3,3
+291,What is foot and mouth disease ?,0,7,1,1,1,1,1,0,1,1,0
+292,What is the life expectancy of a dollar bill ?,4,43,4,4,4,1,4,1,4,4,1
+293,What do you call a professional map drawer ?,0,21,1,0,0,1,1,0,0,0,0
+294,What are Aborigines ?,1,24,1,1,1,1,1,1,1,1,1
+295,What is hybridization ?,1,24,1,1,1,1,1,1,1,1,1
+296,What color is indigo ?,0,4,0,0,0,0,0,0,0,0,0
+297,How old do you have to be in order to rent a car in Italy ?,4,44,4,4,4,4,4,4,4,4,4
+298,What does a barometer measure ?,0,13,1,0,0,1,1,1,1,0,0
+299,What color is a giraffe 's tongue ?,0,4,0,0,0,0,0,0,0,0,0
+301,What year did the NFL go on strike ?,4,39,4,4,4,4,4,4,4,4,4
+302,What is solar wind ?,1,24,1,1,1,1,1,1,1,1,1
+303,What date did Neil Armstrong land on the moon ?,4,39,4,4,4,4,4,4,4,4,4
+304,When was Hiroshima bombed ?,4,39,4,4,4,4,4,4,4,4,4
+305,Where is the Savannah River ?,3,35,3,3,3,3,3,3,3,3,3
+306,Who was the first woman killed in the Vietnam War ?,2,29,2,2,2,2,2,2,2,2,2
+307,What planet has the strongest magnetic field of all the planets ?,3,35,3,3,3,3,3,3,3,3,3
+308,Who is the governor of Alaska ?,2,29,2,2,2,2,2,2,2,2,2
+309,What year did Mussolini seize power in Italy ?,4,39,4,4,4,4,4,4,4,4,4
+310,What is the capital of Persia ?,3,32,3,3,3,3,3,3,3,3,3
+311,Where is the Eiffel Tower ?,3,35,3,3,3,3,3,3,3,3,3
+312,How many hearts does an octopus have ?,4,38,4,4,4,4,4,4,4,4,4
+313,What is pneumonia ?,1,24,1,1,1,1,1,1,1,1,1
+314,What is the deepest lake in the US ?,3,35,3,3,3,3,3,3,3,3,3
+315,What is a fuel cell ?,1,24,1,1,1,1,1,1,1,1,1
+316,Who was the first U.S. president to appear on TV ?,2,29,2,2,2,2,2,2,2,2,2
+317,Where is the Little League Museum ?,3,35,3,3,3,3,3,3,3,3,3
+318,What are the two types of twins ?,0,13,0,1,0,0,0,0,0,0,0
+319,What is the brightest star ?,3,35,1,0,1,3,3,2,2,3,3
+320,What is diabetes ?,1,24,1,1,1,1,1,1,1,1,1
+321,When was President Kennedy shot ?,4,39,4,4,4,4,4,4,4,4,4
+323,What color is yak milk ?,0,4,0,0,0,0,0,0,0,0,0
+324,What date was Dwight D. Eisenhower born ?,4,39,4,4,4,4,4,4,4,4,4
+326,Why is the sun yellow ?,1,27,1,1,1,1,1,1,1,1,1
+327,What is the conversion rate between dollars and pounds ?,4,41,4,4,4,4,4,4,4,4,4
+328,When was Abraham Lincoln born ?,4,39,4,4,4,4,4,4,4,4,4
+329,What is the Milky Way ?,1,24,1,1,1,1,1,1,1,1,1
+330,What is mold ?,1,24,1,1,1,1,1,1,1,1,1
+331,What year was Mozart born ?,4,39,4,4,4,4,4,4,4,4,4
+332,What is a group of frogs called ?,0,2,0,0,0,0,0,0,0,0,0
+333,What is the name of William Penn 's ship ?,0,22,2,2,3,2,2,0,2,0,2
+334,What is the melting point of gold ?,4,43,1,1,4,4,1,1,0,1,0
+335,What is the street address of the White House ?,3,35,3,3,3,3,3,3,3,3,3
+336,What is semolina ?,1,24,1,1,1,1,1,1,1,1,1
+337,What fruit is Melba sauce made from ?,0,9,0,0,0,0,0,0,0,0,0
+338,What is Ursa Major ?,1,24,1,1,1,1,1,1,1,1,1
+339,What is the percentage of water content in the human body ?,4,45,4,4,4,4,4,4,4,4,4
+340,How much does water weigh ?,4,49,4,4,4,4,4,4,4,4,4
+341,What was President Lyndon Johnson 's reform program called ?,0,8,2,2,2,2,2,1,2,2,2
+342,"What is the murder rate in Windsor , Ontario ?",4,45,4,4,4,4,4,4,4,4,4
+343,Who is the only president to serve 2 non-consecutive terms ?,2,29,2,2,2,2,2,2,2,2,2
+344,What is the population of Australia ?,4,43,4,4,4,4,4,4,4,4,4
+345,Who painted the ceiling of the Sistine Chapel ?,2,29,2,2,2,2,2,2,2,2,2
+346,Name a stimulant .,0,7,0,0,0,0,0,0,0,0,0
+347,What is the effect of volcanoes on the climate ?,1,25,1,1,1,1,1,1,1,1,1
+348,What year did the Andy Griffith show begin ?,4,39,4,4,4,4,4,4,4,4,4
+349,What is acid rain ?,1,24,1,1,1,1,1,1,1,1,1
+350,What is the date of Mexico 's independence ?,4,39,4,4,4,4,4,4,4,4,4
+351,What is the location of Lake Champlain ?,3,35,3,3,3,3,3,3,3,3,3
+352,What is the Illinois state flower ?,0,14,0,0,3,3,3,3,0,3,0
+353,What is Maryland 's state bird ?,0,2,0,0,0,3,0,0,0,0,0
+354,What is quicksilver ?,1,24,1,1,1,1,1,1,1,1,1
+355,Who wrote `` The Divine Comedy '' ?,2,29,2,2,2,2,2,2,2,2,2
+356,What is the speed of light ?,4,46,4,4,4,4,4,4,4,4,4
+357,What is the width of a football field ?,4,40,4,4,4,4,4,4,4,4,4
+358,Why in tennis are zero points called love ?,1,27,1,1,1,1,1,1,1,1,1
+359,What kind of dog was Toto in the Wizard of Oz ?,0,2,0,0,0,0,0,0,0,0,0
+360,What is a thyroid ?,1,24,1,1,1,1,1,1,1,1,1
+361,What does ciao mean ?,1,24,1,1,1,1,1,1,1,1,1
+362,What is the only artery that carries blue blood from the heart to the lungs ?,0,3,0,0,0,0,0,0,0,0,0
+363,How often does Old Faithful erupt at Yellowstone National Park ?,4,43,4,4,4,4,4,4,4,4,4
+364,What is acetic acid ?,1,24,1,1,1,1,1,1,1,1,1
+365,"What is the elevation of St. Louis , MO ?",4,40,4,4,4,4,4,4,1,4,4
+366,What color does litmus paper turn when it comes into contact with a strong acid ?,0,4,0,0,0,0,0,0,0,0,0
+367,What are the colors of the German flag ?,0,4,0,0,0,0,0,0,1,0,0
+368,What is the Moulin Rouge ?,1,24,1,1,1,1,1,1,1,1,1
+369,What soviet seaport is on the Black Sea ?,3,35,3,3,3,3,3,3,3,3,3
+370,What is the atomic weight of silver ?,4,49,4,4,4,4,4,4,4,4,4
+371,What currency do they use in Brazil ?,0,6,0,0,0,0,0,0,0,0,0
+372,What are pathogens ?,1,24,1,1,1,1,1,1,1,1,1
+373,What is mad cow disease ?,1,24,0,0,0,1,0,0,0,1,1
+374,Name a food high in zinc .,0,9,0,0,0,0,0,0,0,0,0
+375,When did North Carolina enter the union ?,4,39,4,4,4,4,4,4,4,4,4
+376,Where do apple snails live ?,3,35,3,3,3,3,3,3,3,3,3
+377,What are ethics ?,1,24,1,1,1,1,1,1,1,1,1
+379,What is an annuity ?,1,24,1,1,1,1,1,1,1,1,1
+380,Who killed John F. Kennedy ?,2,29,2,2,2,2,2,2,2,2,2
+381,Who was the first vice president of the U.S. ?,2,29,2,2,2,2,2,2,2,2,2
+382,What birthstone is turquoise ?,0,18,0,0,0,0,0,0,0,0,0
+383,Who was the first US President to ride in an automobile to his inauguration ?,2,29,2,2,2,2,2,2,2,2,2
+384,How old was the youngest president of the United States ?,4,44,4,4,4,4,4,4,4,4,4
+385,When was Ulysses S. Grant born ?,4,39,4,4,4,4,4,4,4,4,4
+386,What is Muscular Dystrophy ?,1,24,1,1,1,1,1,1,1,1,1
+387,Who lived in the Neuschwanstein castle ?,2,29,2,2,2,2,2,2,2,2,2
+388,What is propylene glycol ?,1,24,1,1,1,1,1,1,1,1,1
+389,What is a panic disorder ?,1,24,1,0,0,1,0,0,0,0,0
+390,Who invented the instant Polaroid camera ?,2,29,2,2,2,2,2,2,2,2,2
+391,What is a carcinogen ?,1,24,1,1,1,1,1,1,1,1,1
+392,What is a baby lion called ?,0,2,1,0,1,1,1,1,1,1,0
+393,What is the world 's population ?,4,43,4,4,4,4,4,4,4,4,4
+394,What is nepotism ?,1,24,1,1,1,1,1,1,1,1,1
+395,What is die-casting ?,1,24,1,1,1,1,1,1,1,1,1
+396,What is myopia ?,1,24,1,1,1,1,1,1,1,1,1
+397,What is the sales tax rate in New York ?,4,43,4,4,4,4,4,4,4,4,4
+398,Developing nations comprise what percentage of the world 's population ?,4,45,4,4,3,3,4,4,3,4,4
+399,What is the fourth highest mountain in the world ?,3,34,3,3,3,3,3,3,3,3,3
+400,What is Shakespeare 's nickname ?,2,29,2,2,2,2,2,2,2,2,2
+401,What is the heaviest naturally occurring element ?,0,18,0,0,0,1,0,0,0,0,0
+402,When is Father 's Day ?,4,39,4,4,4,4,4,4,4,4,4
+404,How long is the Columbia River in miles ?,4,40,4,4,4,4,4,4,4,4,4
+405,What city 's newspaper is called `` The Star '' ?,3,32,3,3,3,3,3,3,3,3,3
+406,What is carbon dioxide ?,1,24,1,1,1,1,1,1,1,1,1
+407,Where is the Mason/Dixon line ?,3,35,3,3,3,3,3,3,3,3,3
+408,When was the Boston tea party ?,4,39,4,4,4,4,4,4,4,4,4
+409,What is metabolism ?,1,24,1,1,1,1,1,1,1,1,1
+410,Which U.S.A. president appeared on `` Laugh-In '' ?,2,29,2,2,2,2,2,2,2,2,2
+411,What are cigarettes made of ?,0,18,0,0,0,0,0,0,0,0,0
+412,What is the capital of Zimbabwe ?,3,32,3,3,3,3,3,3,3,3,3
+414,What is the state flower of Michigan ?,0,14,3,3,3,3,3,3,1,3,3
+415,What are semiconductors ?,1,24,1,1,1,1,1,1,1,1,1
+416,What is nuclear power ?,1,24,1,1,1,1,1,1,1,1,1
+417,What is a tsunami ?,1,24,1,1,1,1,1,1,1,1,1
+418,Who is the congressman from state of Texas on the armed forces committee ?,2,29,2,2,2,2,2,2,2,2,2
+419,Who was president in 1913 ?,2,29,2,2,2,2,2,2,2,2,2
+420,When was the first kidney transplant ?,4,39,4,4,4,4,4,4,4,4,4
+421,What are Canada 's two territories ?,3,35,3,3,3,3,3,3,3,3,3
+422,What was the name of the plane Lindbergh flew solo across the Atlantic ?,0,22,0,0,3,0,0,0,0,0,0
+423,What is genocide ?,1,24,1,1,1,1,1,1,1,1,1
+424,What continent is Argentina on ?,3,35,3,3,3,3,3,3,3,3,3
+425,What monastery was raided by Vikings in the late eighth century ?,0,13,3,3,3,3,3,3,3,3,3
+426,What is an earthquake ?,1,24,1,1,1,1,1,1,1,1,1
+427,Where is the tallest roller coaster located ?,3,35,3,3,3,3,3,3,3,3,3
+428,What are enzymes ?,1,24,1,1,1,1,1,1,1,1,1
+429,Who discovered oxygen ?,2,29,2,2,2,2,2,2,2,2,2
+430,What is bangers and mash ?,1,24,1,1,1,1,1,1,1,1,1
+431,What is the name given to the Tiger at Louisiana State University ?,0,2,0,0,0,0,0,0,0,0,0
+432,Where are the British crown jewels kept ?,3,35,3,3,3,3,3,3,3,3,3
+433,Who was the first person to reach the North Pole ?,2,29,2,2,2,2,2,2,2,2,2
+434,What is an ulcer ?,1,24,1,1,1,1,1,1,1,1,1
+435,What is vertigo ?,1,24,1,1,1,1,1,1,1,1,1
+436,What is the spirometer test ?,1,24,1,1,0,1,1,1,1,1,1
+437,When is the official first day of summer ?,4,39,4,4,4,4,4,4,4,4,4
+439,What is the smallest bird in Britain ?,0,2,0,0,0,0,0,0,0,0,0
+440,Who invented Trivial Pursuit ?,2,29,2,2,2,2,2,2,2,2,2
+441,What gasses are in the troposphere ?,0,18,0,0,0,0,0,0,0,0,0
+442,Which country has the most water pollution ?,3,33,3,3,3,3,3,3,3,3,3
+443,What is the scientific name for elephant ?,0,2,0,0,0,0,0,0,0,0,0
+444,Who is the actress known for her role in the movie `` Gypsy '' ?,2,29,2,2,2,2,2,2,2,2,2
+445,What breed of hunting dog did the Beverly Hillbillies own ?,0,2,0,0,0,0,0,0,0,0,0
+446,What is the rainiest place on Earth ?,3,35,3,3,3,3,3,3,3,3,3
+447,Who was the first African American to win the Nobel Prize in literature ?,2,29,2,2,2,2,2,2,2,2,2
+448,When is St. Patrick 's Day ?,4,39,4,4,4,4,4,4,4,4,4
+449,What was FDR 's dog 's name ?,0,2,2,2,2,2,2,2,2,2,2
+450,What colors need to be mixed to get the color pink ?,0,4,0,0,0,0,0,0,0,0,0
+451,What is the most popular sport in Japan ?,0,17,0,0,0,0,0,0,0,0,0
+452,What is the active ingredient in baking soda ?,0,9,0,0,0,0,0,0,0,0,0
+453,When was Thomas Jefferson born ?,4,39,4,4,4,4,4,4,4,4,4
+454,How cold should a refrigerator be ?,4,47,4,4,4,4,4,4,4,4,4
+455,When was the telephone invented ?,4,39,4,4,4,4,4,4,4,4,4
+456,What is the most common eye color ?,0,4,0,0,0,0,0,0,0,0,0
+457,Where was the first golf course in the United States ?,3,35,3,3,3,3,3,3,3,3,3
+458,What is schizophrenia ?,1,24,1,1,1,1,1,1,1,1,1
+459,What is angiotensin ?,1,24,1,1,1,1,1,1,1,1,1
+460,What did Jesse Jackson organize ?,2,28,0,0,0,0,1,0,1,0,0
+461,What is New York 's state bird ?,0,2,0,0,0,3,0,0,0,0,0
+462,What is the National Park in Utah ?,3,35,3,3,3,3,3,3,3,3,3
+463,What is Susan B. Anthony 's birthday ?,4,39,4,4,4,4,4,4,4,4,4
+464,In which state would you find the Catskill Mountains ?,3,36,3,3,3,3,3,3,3,3,3
+465,What do you call a word that is spelled the same backwards and forwards ?,0,21,0,0,0,1,0,0,0,0,0
+466,What are pediatricians ?,1,24,1,1,1,1,1,1,1,1,1
+467,"What chain store is headquartered in Bentonville , Arkansas ?",2,28,2,2,2,2,2,2,2,0,2
+468,What are solar cells ?,1,24,1,1,1,1,1,1,1,1,1
+469,What is compounded interest ?,1,24,1,1,1,1,1,1,1,1,1
+470,What are capers ?,1,24,1,1,1,1,1,1,1,1,1
+471,What is an antigen ?,1,24,1,1,1,1,1,1,1,1,1
+472,What currency does Luxembourg use ?,0,6,0,0,0,0,0,0,0,0,0
+473,What is the population of Venezuela ?,4,43,4,4,4,4,4,4,4,4,4
+474,What type of polymer is used for bulletproof vests ?,0,13,0,0,0,0,0,0,0,0,0
+475,What currency does Argentina use ?,0,6,0,0,0,0,0,0,0,0,0
+476,What is a thermometer ?,1,24,1,1,1,1,1,1,1,1,1
+477,What Canadian city has the largest population ?,3,32,3,3,3,3,3,3,3,3,3
+478,What color are crickets ?,0,4,0,0,0,0,0,0,0,0,0
+479,Which country gave New York the Statue of Liberty ?,3,33,3,3,3,3,3,3,3,3,3
+480,What was the name of the first U.S. satellite sent into space ?,0,15,0,0,0,0,0,0,0,0,0
+481,What precious stone is a form of pure carbon ?,0,18,0,0,0,0,0,0,0,0,0
+482,What kind of gas is in a fluorescent bulb ?,0,18,0,0,0,0,0,0,0,0,0
+483,What is rheumatoid arthritis ?,1,24,1,1,1,1,1,1,1,1,1
+484,"What river runs through Rowe , Italy ?",3,35,3,3,3,3,3,3,3,3,3
+485,What is cerebral palsy ?,1,24,1,1,1,1,1,1,1,1,1
+486,What city is also known as `` The Gateway to the West '' ?,3,32,3,3,3,3,3,3,3,3,3
+487,How far away is the moon ?,4,40,4,4,4,4,4,4,4,4,4
+488,What is the source of natural gas ?,0,13,0,1,0,1,0,1,1,1,0
+489,In what spacecraft did U.S. astronaut Alan Shepard make his historic 1961 flight ?,0,22,0,2,2,2,0,2,3,2,2
+490,What is pectin ?,1,24,1,1,1,1,1,1,1,1,1
+491,What is bio-diversity ?,1,24,1,1,1,1,1,1,1,1,1
+492,What 's the easiest way to remove wallpaper ?,0,20,0,0,0,0,0,0,0,0,0
+493,What year did the Titanic start on its journey ?,4,39,4,4,4,4,4,4,4,4,4
+494,How much of an apple is water ?,4,38,4,4,4,4,4,4,4,4,4
+495,Who was the 22nd President of the US ?,2,29,2,2,2,2,2,2,2,2,2
+496,What is the money they use in Zambia ?,0,6,0,0,0,0,1,0,0,0,0
+497,How many feet in a mile ?,4,38,4,4,4,4,4,4,4,4,4
+498,What is the birthstone of October ?,0,18,1,0,0,1,1,0,0,4,0
+499,What is e-coli ?,1,24,1,1,1,1,1,1,1,1,1

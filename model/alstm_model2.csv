@@ -1,0 +1,102 @@
+no,train_acc,test_acc,train_loss,test_loss,drop_rate,vocab_size,n_heads,embedding_trainable,optimizer,optimizer_lr,weight_decay,cv_fold,epochs,use_stopwords,drop_abbreviation,notes
+1,0.8915,0.9206,0.3056,0.2231,0.5,8838,1,False,AdamW,0.001,0.1,10,20,False,True,"pengujian epoch"
+2,0.9529,0.9328,0.1420,0.1815,0.5,8838,1,False,AdamW,0.001,0.1,10,40,False,True,pengujian epoch
+3,0.9744,0.9409,0.0762,0.1848,0.5,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian epoch
+4,0.9819,0.9369,0.0577,0.1959,0.5,8838,1,False,AdamW,0.001,0.1,10,80,False,True,pengujian epoch
+5,0.9800,0.9430,0.0640,0.2615,0.5,8838,1,False,AdamW,0.001,0.1,10,100,False,True,pengujian epoch
+6,0.9760,0.9308,0.0782,0.2183,0.5,8838,1,False,AdamW,0.001,0.1,10,100,False,True,"batas pengujian epoch"
+7,1.0000,0.9185,0.0001,0.4716,0.0,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian dropout
+8,0.9880,0.9430,0.0431,0.2284,0.2,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian dropout
+9,0.9779,0.9430,0.0651,0.2210,0.4,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian dropout
+10,0.9513,0.9450,0.1415,0.1580,0.6,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian dropout
+11,0.8339,0.9145,0.4720,0.2266,0.8,8838,1,False,AdamW,0.001,0.1,10,60,False,True,"batas pengujian dropout"
+12,0.2365,0.1324,1.5985,1.6422,0.6,8838,1,False,AdamW,0.1,0.1,10,60,False,True,pengujian learning rate
+13,0.2384,0.1914,1.5968,1.6263,0.6,8838,1,False,AdamW,0.01,0.1,10,60,False,True,pengujian learning rate
+14,0.9464,0.9389,0.1656,0.1618,0.6,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian learning rate
+15,0.8136,0.9063,0.5047,0.3029,0.6,8838,1,False,AdamW,0.0001,0.1,10,60,False,True,pengujian learning rate
+16,0.5955,0.7434,1.0098,0.7356,0.6,8838,1,False,AdamW,1e-05,0.1,10,60,False,True,pengujian learning rate
+17,0.3056,0.3971,1.5789,1.5914,0.6,8838,1,False,AdamW,1e-06,0.1,10,60,False,True,"batas pengujian learning rate"
+18,0.9464,0.9470,0.1537,0.1503,0.6,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian weight decay
+19,0.9626,0.9409,0.1132,0.1768,0.6,8838,1,False,AdamW,0.001,0.01,10,60,False,True,pengujian weight decay
+20,0.9609,0.9348,0.1191,0.2407,0.6,8838,1,False,AdamW,0.001,0.001,10,60,False,True,pengujian weight decay
+21,0.9586,0.9430,0.1106,0.2004,0.6,8838,1,False,AdamW,0.001,0.0001,10,60,False,True,"batas pengujian weight decay"
+22,0.9478,0.9287,0.1575,0.2159,0.6,8838,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian tanpa stopwords
+25,0.8678,0.8228,0.3674,0.5202,0.6,8766,1,False,AdamW,0.001,0.1,10,60,True,True,pengujian stopwords
+24,0.8652,0.8248,0.3765,0.5087,0.6,8766,1,False,AdamW,0.001,0.1,10,60,True,True,pengujian stopwords
+25,0.9226,0.8798,0.2137,0.3644,0.6,7375,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian stemming
+26,0.9518,0.9348,0.1466,0.1902,0.6,8175,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian lemma
+27,0.9499,0.9532,0.1457,0.1569,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian tanpa lemma
+28,0.9473,0.9450,0.1592,0.1805,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian tanpa lemma
+29,0.9461,0.9572,0.1526,0.1709,0.6,8175,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian lemma
+30,0.9565,0.9308,0.1257,0.2065,0.6,8175,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian lemma
+31,0.9492,0.9348,0.1435,0.1954,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,pengujian lemma
+32,0.9466,0.9267,0.1501,0.2078,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,ff*4
+33,0.9551,0.9328,0.1300,0.1981,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,ff*4
+34,0.9534,0.9369,0.1354,0.2032,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu"
+35,0.9496,0.9389,0.1382,0.1857,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu"
+36,0.9558,0.9409,0.1300,0.1736,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+37,0.9471,0.9389,0.1554,0.1679,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+38,0.8901,0.9084,0.3093,0.2499,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+39,0.9301,0.9409,0.1971,0.1721,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+40,0.8925,0.9226,0.2998,0.2460,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+41,0.9231,0.9246,0.2253,0.2134,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+42,0.9492,0.9389,0.1490,0.1634,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+43,0.9471,0.9348,0.1535,0.1784,0.6,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+44,0.9579,0.9348,0.1244,0.2361,0.6,8898,1,False,AdamW,0.001,0.01,10,60,False,True,"ff*2, gelu. not using masked"
+45,0.9626,0.9389,0.1131,0.2025,0.6,8898,1,False,AdamW,0.001,0.01,10,60,False,True,"ff*2, gelu. not using masked"
+46,0.9661,0.9491,0.1022,0.1959,0.6,8898,1,False,AdamW,0.001,0.01,10,60,False,True,"ff*2, gelu. not using masked"
+47,0.9894,0.9104,0.0344,0.3400,0.2,8898,1,False,AdamW,0.001,0.1,10,60,False,True,"ff*2, gelu. not using masked"
+48,0.9193,0.9369,0.2212,0.1848,0.6,8175,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+49,0.8602,0.9145,0.4133,0.2372,0.6,8175,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+50,0.8602,0.9145,0.4133,0.2372,0.6,8175,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+51,0.8602,0.9145,0.4133,0.2372,0.6,8175,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+52,0.9320,0.9470,0.1937,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+53,0.9320,0.9470,0.1937,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+54,0.9320,0.9470,0.1937,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+55,0.9320,0.9470,0.1937,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+56,0.9042,0.9246,0.2601,0.1955,0.6,8898,2,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+57,0.9327,0.9430,0.1828,0.1772,0.6,8898,5,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+58,0.9454,0.9511,0.1698,0.1988,0.6,8898,5,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+59,0.9339,0.9470,0.1846,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+60,0.9407,0.9430,0.1777,0.1556,0.6,8898,2,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+61,0.9339,0.9470,0.1846,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+62,0.9454,0.9511,0.1698,0.1988,0.6,8898,5,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+63,0.9339,0.9470,0.1846,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+64,0.9245,0.9369,0.2083,0.1720,0.6,8898,3,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+65,0.9320,0.9470,0.1937,0.1686,0.6,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+66,0.9042,0.9246,0.2601,0.1955,0.6,8898,2,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+67,0.9351,0.9328,0.1915,0.2165,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+68,0.9351,0.9328,0.1915,0.2165,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+69,0.9480,0.9267,0.1487,0.2565,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+70,0.9158,0.9226,0.2440,0.1946,0.5,8898,2,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+71,0.9136,0.9409,0.2429,0.1860,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+72,0.9351,0.9328,0.1915,0.2165,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+73,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+74,0.9489,0.9328,0.1480,0.2083,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+75,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+76,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+77,0.9042,0.9145,0.2834,0.2329,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+78,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+79,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+80,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+81,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+82,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+83,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+84,0.9082,0.9246,0.2884,0.2208,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+85,0.9522,0.9369,0.1309,0.2377,0.5,8898,3,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+86,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+87,0.9242,0.9389,0.2150,0.2037,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+88,0.9242,0.9389,0.2150,0.2037,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+89,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+90,0.8941,0.9267,0.2977,0.2492,0.5,8898,2,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+91,0.8941,0.9267,0.2977,0.2492,0.5,8898,2,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+92,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+93,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+94,0.9242,0.9389,0.2150,0.2037,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+95,0.9242,0.9389,0.2150,0.2037,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+96,0.9365,0.9328,0.1916,0.1870,0.5,8898,1,False,AdamW,0.001,0.001,10,100,False,True,"ff*2, gelu. not using masked"
+97,0.9365,0.9328,0.1916,0.1870,0.5,8898,1,False,AdamW,0.001,0.001,10,100,False,True,"ff*2, gelu. not using masked"
+98,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+99,0.9329,0.9308,0.2021,0.1879,0.5,8898,1,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+100,0.9242,0.9389,0.2150,0.2037,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
+101,0.9242,0.9389,0.2150,0.2037,0.5,8898,50,False,AdamW,0.001,0.01,10,100,False,True,"ff*2, gelu. not using masked"
